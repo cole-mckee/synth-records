@@ -1,0 +1,105 @@
+:root {
+  --primary: #F196BA;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: "Staatliches";
+  text-transform: uppercase;
+}
+
+a, p {
+  font-family: "Inter";
+  text-decoration: none;
+}
+
+.button {
+  color: black;
+  background-color: white;
+  padding: 16px 64px;
+  border-radius: 100px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 80px;
+}
+
+nav {
+  width: 100vw;
+  height: 80px;
+  position: relative;
+  background-color: var(--primary);
+}
+nav::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/background/AdobeStock_960928924.png") no-repeat 20% 50%/190%;
+  opacity: 0.25;
+  mix-blend-mode: soft-light;
+  z-index: 1;
+}
+nav section {
+  height: 80px;
+  z-index: 2;
+}
+nav section img {
+  height: 100%;
+}
+nav section a {
+  font-family: "Staatliches";
+  text-transform: uppercase;
+}
+nav section.nav-img {
+  grid-column: 1/2;
+}
+nav section.nav-link {
+  grid-column: 3/10;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 48px;
+}
+nav section.nav-link a {
+  font-size: 24px;
+  color: white;
+}
+
+.home section {
+  grid-column: 1/13;
+  position: relative;
+}
+.home section.section1 {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home section.section1 img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.home section.section1 div {
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.home section.section1 div p {
+  color: white;
+}/*# sourceMappingURL=input.css.map */
