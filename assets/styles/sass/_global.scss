@@ -27,5 +27,6 @@ a, p {
 %grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 36px;
     padding: 0 80px;
 }
