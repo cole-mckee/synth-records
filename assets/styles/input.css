@@ -36,7 +36,7 @@ a, p {
   border-radius: 100px;
 }
 
-.home section.section5 .artist-cont, .home section.section5, .home section.section4, .home section.section3 div, .home section.section2 div, nav {
+.about section.section3, .about section.section2, .home section.section5 .artist-cont, .home section.section5, .home section.section4, .home section.section3 div, .home section.section2 div, nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 36px;
@@ -114,7 +114,7 @@ footer {
   width: 100%;
   z-index: -1;
 }
-.home section.section1 div {
+.home section.section1 article {
   position: absolute;
   height: 100%;
   display: flex;
@@ -122,10 +122,10 @@ footer {
   justify-content: end;
   align-items: center;
 }
-.home section.section1 div p {
+.home section.section1 article p {
   color: white;
 }
-.home section.section1 div a {
+.home section.section1 article a {
   margin-bottom: 80px;
 }
 .home section.section2 {
@@ -309,4 +309,147 @@ footer {
 }
 .home section.section5 .artist-cont article.artist4 {
   grid-column: 10/13;
+}
+
+.about section {
+  position: relative;
+}
+.about section.section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about section.section1 div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  aspect-ratio: 16/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
+}
+.about section.section1 div img {
+  position: absolute;
+  width: 100%;
+  opacity: 50%;
+}
+.about section.section1 article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.about section.section1 article p, .about section.section1 article h1 {
+  color: white;
+  text-align: start;
+  padding: 0 80px;
+}
+.about section.section1 article h1 {
+  margin: 0;
+}
+.about section.section2 {
+  padding-top: 64px;
+}
+.about section.section2 div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  grid-column: 1/5;
+  padding: 0;
+  aspect-ratio: 3/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.about section.section2 div img {
+  position: absolute;
+  height: 100%;
+}
+.about section.section2 article {
+  grid-column: 5/13;
+  display: flex;
+  flex-direction: column;
+}
+.about section.section2 article h2 {
+  margin: 0;
+}
+.about section.section3 {
+  padding-top: 64px;
+}
+.about section.section3 article {
+  grid-column: 1/8;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+}
+.about section.section3 article h2 {
+  margin: 0;
+}
+.about section.section3 div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  grid-column: 8/13;
+  padding: 0;
+  aspect-ratio: 3/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.about section.section3 div img {
+  position: absolute;
+  height: 100%;
+}
+.about section.section4 {
+  padding: 0 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  padding-top: 64px;
+}
+.about section.section4 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about section.section4 article .bold {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+.about section.section5 {
+  padding: 0 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding-top: 64px;
+}
+.about section.section5 div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  aspect-ratio: 3/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.about section.section5 div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=input.css.map */
